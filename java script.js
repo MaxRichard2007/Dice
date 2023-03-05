@@ -4,7 +4,7 @@ var randomDiceImge = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
 var randomImgeSource = "images/" + randomDiceImge; //images/dice1.png - image/images/dice6.png
 
-var image1 = document.querySelectorAll("img") [0];
+var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src", randomImgeSource);
 
@@ -15,7 +15,7 @@ var randomDiceImge = "dice" + randomNumber2 + ".png"; //dice1.png - dice6.png
 
 var randomImgeSource = "images/" + randomDiceImge; //images/dice1.png - image/images/dice6.png
 
-var image2 = document.querySelectorAll("img") [1];
+var image2 = document.querySelectorAll("img")[1];
 
 image2.setAttribute("src", randomImgeSource);
 
@@ -23,50 +23,24 @@ image2.setAttribute("src", randomImgeSource);
 if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").innerHTML = "player 1 wins! 🚩"
 }
-//if player 2 wins
+// if player 2 wins
 else if (randomNumber1 < randomNumber2) {
     document.querySelector("h1").innerHTML = "player 2 wins! 🏴‍☠️"
 }
-//if Draw
-else{
+// if Draw
+else {
     document.querySelector("h1").innerHTML = "Draw! 🏳️";
 }
 
-
-
-
-
-
 // DISABLE RIGHT CLICK
-document.addEventListener("contextmenu" , function(e){
+document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 }, false);
 
 // DISABLE SHORTCUT KEYS
-// document.addEventListener("keydown" , function(e){
-//     if(e.ctrlKey || e/keyCode==123) {
-//         e.stopPropagation();
-//         e.preventDefault();
-//     }
-// });
-
-document.addEventListener("keydown", function(e){
-    if(e.ctrlKey || e.keyCode==123){
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.keyCode == 123) {
         e.stopPropagation();
         e.preventDefault();
     }
 })
-
-
-
-
-
-
-
-function showHideShipInfo() {
-    if(document.getElementById('my-name').checked==true){
-
-    }else {
-
-    }
-}

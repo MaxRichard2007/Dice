@@ -27,29 +27,36 @@ a {
     margin: auto;
     text-align: center;
 }
-.dice{
+
+.dice {
     text-align: center;
     display: inline-block;
 }
-h1{
+
+h1 {
     margin: 30px;
     text-shadow: 5px 0 #232931;
     font-size: 8rem;
     color: #4ecca3;
 }
 
-p{
+p {
     font-size: 2rem;
     color: #4ecca3;
 }
-img{
+
+img {
     width: 80%;
 }
-footer{
+
+footer {
     margin-top: 5%;
     color: #eeee;
     text-align: center;
 }
-#my-name{
+
+#my-name {
     display: none;
+    text-align: center;
+    margin-top: 25%;
 }
